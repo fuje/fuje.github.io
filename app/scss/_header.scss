@@ -1,0 +1,56 @@
+$header-font-weight: 400;
+$header-margin: 20px;
+$header-heights: (
+	xs: 70px,
+	sm: 100px,
+	md: 130px,
+	lg: 160px
+);
+$header-font-heights: (
+	xs: 25px,
+	sm: 50px,
+	md: 80px,
+	lg: 100px
+);
+
+@each $key, $breakpoint in $breakpoints {
+	$h: map-get($header-heights, $key);
+
+	@media #{$breakpoint} {
+		header {
+			height: $h;
+
+			h1 {
+				font-size: map-get($header-font-heights, $key);
+				line-height: $h;
+			}
+		}	
+	}
+}
+
+header {
+	background-color: $color-black;
+	text-align: center;
+	width: 100%;
+	top: 0;
+
+	h1 {
+		font-family: 'Alegreya Sans SC', sans-serif;
+		color: $color-white;
+		font-weight: $header-font-weight;
+
+		&:before, &:after {
+			color: $color-pink;
+		}
+
+		&:before {
+			content: "<";
+			margin-right: $header-margin;
+		}
+
+		&:after {
+			content: "/>";
+			margin-left: $header-margin;
+		}
+	}
+}
