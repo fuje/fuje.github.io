@@ -1,0 +1,26 @@
+@import 'about';
+
+$section-margin: 20px;
+
+article {
+	margin: $section-margin 0;
+
+	h1 {
+		text-align: center;
+		background-color: $color-black;
+		color: $color-white;
+		font-weight: 900;
+		padding: $default-padding;
+	}
+
+	p {
+		font-weight: 400;
+		margin-bottom: 5px;
+	}
+
+	.content {
+		background-color: $color-white;
+		padding: $default-spacing-text;
+	}
+
+}

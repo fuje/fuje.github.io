@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:900");
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,900);
+/* Responsive Breakpoints
+   ========================================================================== */
+@media only screen and (max-width: 480px) {
+  header {
+    height: 70px; }
+    header h1 {
+      font-size: 25px;
+      line-height: 70px; } }
+
+@media only screen and (max-width: 768px) and (min-width: 481px) {
+  header {
+    height: 100px; }
+    header h1 {
+      font-size: 50px;
+      line-height: 100px; } }
+
+@media only screen and (max-width: 1024px) and (min-width: 769px) {
+  header {
+    height: 130px; }
+    header h1 {
+      font-size: 80px;
+      line-height: 130px; } }
+
+@media only screen and (min-width: 1025px) {
+  header {
+    height: 160px; }
+    header h1 {
+      font-size: 100px;
+      line-height: 160px; } }
+
+header {
+  background-color: #272822;
+  text-align: center;
+  width: 100%;
+  top: 0; }
+  header h1 {
+    font-family: 'Alegreya Sans SC', sans-serif;
+    color: #f8f8f2;
+    font-weight: 400; }
+    header h1:before, header h1:after {
+      color: #f92659; }
+    header h1:before {
+      content: "<";
+      margin-right: 20px; }
+    header h1:after {
+      content: "/>";
+      margin-left: 20px; }
+
+article#about div.rounded-profile-photo {
+  background: url("../images/photo.jpg");
+  background-size: contain;
+  width: 150px;
+  height: 150px;
+  float: left;
+  margin-bottom: 15px;
+  margin-right: 15px;
+  border-radius: 50%;
+  border: 1px solid #272822; }
+
+article {
+  margin: 20px 0; }
+  article h1 {
+    text-align: center;
+    background-color: #272822;
+    color: #f8f8f2;
+    font-weight: 900;
+    padding: 7px; }
+  article p {
+    font-weight: 400;
+    margin-bottom: 5px; }
+  article .content {
+    background-color: #f8f8f2;
+    padding: 15px; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif; }
+
+img,
+embed,
+object,
+video {
+  max-width: 100%; }
+
+body {
+  background-color: #f5eedb;
+  color: #272822; }
+
+.clearfix:after {
+  clear: both;
+  content: " ";
+  visibility: hidden;
+  display: block;
+  height: 0; }
