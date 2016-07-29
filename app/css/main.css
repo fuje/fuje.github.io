@@ -69,7 +69,9 @@ article {
     padding: 7px; }
   article p {
     font-weight: 400;
-    margin-bottom: 5px; }
+    line-height: 1.5; }
+    article p:not(:last-child) {
+      margin-bottom: 10px; }
   article .content {
     background-color: #f8f8f2;
     padding: 15px; }
@@ -89,6 +91,11 @@ video {
 body {
   background-color: #f5eedb;
   color: #272822; }
+
+#container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 7px; }
 
 .clearfix:after {
   clear: both;

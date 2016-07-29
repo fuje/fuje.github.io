@@ -24,6 +24,12 @@ body {
     color: $color-black;
 }
 
+#container {
+	max-width: $maxWidth;
+	margin: 0 auto;
+	padding: $default-padding;
+}
+
 .clearfix:after {
     clear: both;
     content: " ";

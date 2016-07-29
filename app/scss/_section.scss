@@ -15,7 +15,11 @@ article {
 
 	p {
 		font-weight: 400;
-		margin-bottom: 5px;
+		line-height: 1.5;
+
+		&:not(:last-child) {
+			margin-bottom: 10px;
+		}
 	}
 
 	.content {
