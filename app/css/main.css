@@ -59,6 +59,14 @@ article#about div.rounded-profile-photo {
   border-radius: 50%;
   border: 1px solid #272822; }
 
+.card-container {
+  display: flex; }
+
+.card {
+  width: 100px;
+  height: 100px;
+  background-color: rgba(0, 0, 255, 0.4); }
+
 article {
   margin: 20px 0; }
   article h1 {
